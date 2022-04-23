@@ -1,0 +1,60 @@
+<div style="display:flex">
+  
+  <div style="width: 50%; float:left; display: block ">
+    <img src="./login/imagen1.png"
+     alt="La cabeza y el torso de un esqueleto de dinosaurio;
+           tiene una cabeza grande con dientes largos y afilados"
+     width="400"
+     height="341"
+     title="Exposición de un T-Rex en el museo de la Universidad de Manchester.">
+  </div>
+ 
+  <div class="card" style="width: 50%; float:right; padding-top:5rem; padding-left: 5rem; padding-right:5rem">
+    <div class="card-body">
+    <form>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form2Example1">RFC</label>
+          <input type="email" id="form2Example1" class="form-control" />
+        </div>
+        <br>
+      
+        <div class="form-outline mb-4">
+            <label for="avatar">Certificado*</label>
+            <input type="file"
+              id="avatar" name="avatar"
+              accept="image/png, image/jpeg">
+            </div>
+            <br>
+
+            <div class="form-outline mb-4">
+                <label for="avatar">Llave privada*</label>
+                <input type="file"
+                  id="avatar" name="avatar"
+                  accept="image/png, image/jpeg">
+                </div>
+                <br>    
+
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example2">Contraseña de la llave privada</label>
+             <input type="password" id="form2Example2" class="form-control" />
+     
+        </div>
+        <br>
+   
+        <!-- Submit button -->
+        <button type="button" (click)="Validar()"  class="btn btn-primary btn-block mb-4">Validar</button>
+        <br> <br>
+
+        <!-- Submit button -->
+        <label for="avatar">*Campos Obligatorio</label>
+        <button type="button" (click)="Registrar()"  class="btn btn-primary btn-block mb-4">Registrar</button>
+        <br> <br>
+      </form>  
+      </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
